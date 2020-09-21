@@ -1,0 +1,71 @@
+<link type="text/css" rel="stylesheet" href="main.css" />
+p{ 
+color: blue;
+font-size: 22px;
+} 
+.listitem {
+color:red;
+font-size:20px;}
+
+#banner {
+height:5000px;
+width:100%;
+border:2px solid black;
+background-color:#0000ff;
+margin-bottom: 15px;}
+
+.wrap-trivia {
+height: 500px;
+width: 450px;
+border: 5px double yellow;
+padding: 50px;
+}
+#one {
+height: 150px;
+width: 150px;
+background-color: blue;
+}
+#two {
+height: 150px;
+width: 150px;
+background-color: grey;
+}
+#three {
+height: 150px;
+width: 150px;
+background-color: black;
+}
+.navitem {
+list-style-type:none;
+ display:inline;
+margin-right:.3em;
+padding:2px 5px; 
+}
+#navmenu {
+text-align:center;
+background-color:white;
+color:black; 
+}
+a:link{ 
+color:blue; 
+} 
+a:visited{ 
+color:purple; 
+} 
+a:hover{ 
+color:yellow; 
+} 
+a:active{ 
+color:green; 
+} 
+.rightside { 
+float:right; 
+width:48%;
+}
+
+.leftside { 
+width:48%; 
+}
+.clearfloat { 
+ clear:both;
+}

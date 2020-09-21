@@ -1,0 +1,76 @@
+<Html>
+ <head>
+   <link type="text/css" rel= "stylesheet" href="main.css" />
+   <title> Grove City Christian High School </title>
+<script> 
+function banner(){ 
+var text = confirm("Are You Sure You Want To Go To The Student Portal?"); 
+return text; 
+} 
+function answer(){ 
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = ""; 
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "yes" && radio[i].checked == true) { 
+selection = true; 
+   }
+  }
+ if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+}
+
+</script>
+  </head>
+  
+
+<a onclick="return banner()" href="http://portal.grovecitychristian.org"> 
+<header id="header"> Student Portal </header>
+</a> 
+
+  <nav> 
+<ul id="navmenu">
+<li class="navitem"> <a href="index.html"> Home </a> </li>
+<li class="navitem"> <a href="games.html"> Calender </a> </li>
+<li class="navitem"> <a href="videos.html"> Videos </a> </li>
+</ul> </nav> 
+  <div class="rightside"> 
+ <img src="https://1.bp.blogspot.com/-zpcfN8hm-HQ/W0t1t-gRieI/AAAAAAAAphM/llOYu16bJbIt91YVEIeOTCn3qzEID6KpgCLcBGAs/s1600/Flag_of_the_United_States.gif"  /> 
+</div 
+  <div class="leftside"> 
+<h4> Classes
+      <ol>
+  <li>MATH</li>
+  <li>ENGLISH</li>
+  <li>SPANISH</li>
+  <li>SCIENCE</li>
+  <li>HISTORY</li>
+</ol>
+    </h4>
+</div 
+  <div class="clearfloat"></div>
+  <body>
+ <h1> <span color="blue"class="blue" >About The School </span> </h1>
+  <p> This <strong>Website</strong> is about a school located in <i>Grove City Ohio</i>, within this school there is a very welcoming <u>student body and teachers</u>, With many different classes to enjoy. </p>
+   <h2> School Triva </h2>
+   <p> When did the School open? </p>
+    <ol>
+   <form>
+    <div id="response"> </div>
+ <input type="radio" name="trivia" value="False"> 1980 <br>
+  <input type="radio" name="trivia" value="True"> 1983 <br>
+   <input type="radio" name="trivia" value="False"> 1990 <br>
+   <input type="radio" name="trivia" value="False"> 2000 <br>
+  <input onclick="answer()" type="button" value="Submit">
+ </form>
+  <img src="https://www.thisweeknews.com/storyimage/OH/20190523/SPORTS/190528952/AR/0/AR-190528952.jpg" />
+<h3>The School Calender 2020-2021</h3>
+<img src="https://grovecitychristian.org/wp-content/uploads/2020/07/2020-2021-GCCS-Calendar.pdf" /> 
+   <hr />
+   </a> </center>
+  </body>
+</html>
